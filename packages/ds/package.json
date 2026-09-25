@@ -1,0 +1,33 @@
+{
+  "name": "@repro/ds",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "panda codegen && panda lib"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./Icon": "./src/Icon.js",
+    "./panda/*": "./dist/panda/*",
+    "./css": {
+      "types": "./styled-system/css/index.d.ts",
+      "default": "./styled-system/css/index.js"
+    },
+    "./css/*": {
+      "types": "./styled-system/css/*.d.ts",
+      "default": "./styled-system/css/*.js"
+    },
+    "./tokens": {
+      "types": "./styled-system/tokens/index.d.ts",
+      "default": "./styled-system/tokens/index.js"
+    },
+    "./helpers": {
+      "types": "./styled-system/helpers.d.ts",
+      "default": "./styled-system/helpers.js"
+    }
+  },
+  "peerDependencies": {
+    "@pandacss/dev": "2.0.0-beta.18"
+  }
+}

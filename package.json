@@ -1,0 +1,11 @@
+{
+  "name": "panda-transitive-import-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "reproduce": "pnpm --filter @repro/ds build && pnpm --filter @repro/app build"
+  },
+  "devDependencies": {
+    "@pandacss/dev": "2.0.0-beta.18"
+  }
+}

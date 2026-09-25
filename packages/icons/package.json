@@ -1,0 +1,12 @@
+{
+  "name": "@repro/icons",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "dependencies": {
+    "@repro/ds": "workspace:*"
+  }
+}
